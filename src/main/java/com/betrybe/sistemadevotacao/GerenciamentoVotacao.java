@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class GerenciamentoVotacao {
   private ArrayList<PessoaCandidata> pessoasCandidatas = new ArrayList<PessoaCandidata>();
   private ArrayList<PessoaEleitora> pessoasEleitoras = new ArrayList<PessoaEleitora>();
-  private ArrayList<String> cpfComputado = new ArrayList<String>();
+  private ArrayList<String> cpfsComputados = new ArrayList<String>();
   private int totalVotos;
 
   public ArrayList<PessoaCandidata> getPessoasCandidatas() {
@@ -27,12 +27,12 @@ public class GerenciamentoVotacao {
     this.pessoasEleitoras = pessoasEleitoras;
   }
 
-  public ArrayList<String> getCpfComputado() {
-    return cpfComputado;
+  public ArrayList<String> getCpfsComputados() {
+    return cpfsComputados;
   }
 
-  public void setCpfComputado(ArrayList<String> cpfComputado) {
-    this.cpfComputado = cpfComputado;
+  public void setCpfsComputados(ArrayList<String> cpfsComputados) {
+    this.cpfsComputados = cpfsComputados;
   }
 
   public int getTotalVotos() {
@@ -73,7 +73,7 @@ public class GerenciamentoVotacao {
    * Registra voto.
    */
   public void votar(String cpfPessoaEleitora, int numeroPessoaCandidata) {
-    if (this.cpfComputado.contains(cpfPessoaEleitora)) {
+    if (this.cpfsComputados.contains(cpfPessoaEleitora)) {
       System.out.println("Pessoa eleitora já votou!");
       return;
     }
@@ -84,7 +84,7 @@ public class GerenciamentoVotacao {
         break;
       }
     }
-    this.cpfComputado.add(cpfPessoaEleitora);
+    this.cpfsComputados.add(cpfPessoaEleitora);
     this.totalVotos += 1;
   }
   
