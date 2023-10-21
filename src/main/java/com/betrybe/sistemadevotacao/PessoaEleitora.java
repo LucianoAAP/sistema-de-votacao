@@ -1,5 +1,8 @@
 package com.betrybe.sistemadevotacao;
 
+/**
+ * Pessoa eleitora.
+ */
 public class PessoaEleitora extends Pessoa {
   private String cpf;
   

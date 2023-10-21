@@ -2,9 +2,9 @@ package com.betrybe.sistemadevotacao;
 
 import java.util.ArrayList;
 
-import com.betrybe.sistemadevotacao.PessoaCandidata;
-import com.betrybe.sistemadevotacao.PessoaEleitora;
-
+/**
+ * Gerenciamento votação.
+ */
 public class GerenciamentoVotacao {
   private ArrayList<PessoaCandidata> pessoasCandidatas = new ArrayList<PessoaCandidata>();
   private ArrayList<PessoaEleitora> pessoasEleitoras = new ArrayList<PessoaEleitora>();

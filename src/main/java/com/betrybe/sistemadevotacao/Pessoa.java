@@ -1,5 +1,8 @@
 package com.betrybe.sistemadevotacao;
 
+/**
+ * Pessoa.
+ */
 public class Pessoa {
   private String nome;
   

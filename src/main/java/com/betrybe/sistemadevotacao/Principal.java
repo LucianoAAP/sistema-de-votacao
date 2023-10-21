@@ -3,6 +3,9 @@ package com.betrybe.sistemadevotacao;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Classe principal.
+ */
 public class Principal {
 
   /**
