@@ -3,7 +3,7 @@ package com.betrybe.sistemadevotacao;
 /**
  * Pessoa.
  */
-public class Pessoa {
+public abstract class Pessoa {
   private String nome;
   
   public Pessoa() {
